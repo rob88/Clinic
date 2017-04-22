@@ -26,12 +26,20 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import Entity.Clinic;
 
 
-
+/* 
+ * ClinicCiteNames is a class acts like a fake database
+ *This is the Controller Class , Implement the ClinicService Class
+ *@author Ruben Faraj
+ *@verson 0.1 
+ *@Date 19-04-2017 
+ */
 @Repository 
 public class ClinicCitesNames {
 
-	
+    // Creating a hashmap	
 	private static Map<Integer, Clinic> clinicCity;// Creating a Hashmap
+	
+	
 	@Bean
 	public RestTemplate restTemplate(RestTemplateBuilder builder) {
 		return builder.build();
@@ -46,7 +54,7 @@ public class ClinicCitesNames {
 		};
 	}
 	
-	
+	//getClinicCity details display all the record in the database 
 public Collection<Clinic>getClinicCity(){
 	return this.clinicCity.values();
 }

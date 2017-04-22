@@ -12,6 +12,14 @@ import Services.ClinicService;
 
 import java.util.Collection;
 
+
+/* 
+ *Class  Controller
+ *This is the Controller Class , Implement the ClinicService Class
+ *@author Ruben Faraj
+ *@verson 0.1 
+ *@Date 19-04-2017 
+ */
 @RestController 
 @RequestMapping("/clinicCity") // first endpoint to display all data
 public class Controller {

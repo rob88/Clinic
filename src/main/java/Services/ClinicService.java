@@ -11,7 +11,12 @@ import org.springframework.web.client.RestTemplate;
 import Entity.Clinic;
 import dao.ClinicCitesNames;
 
-
+/* 
+ *Class ClinicService 
+ *@author Ruben Faraj
+ *@verson 0.1 
+ *@Date 19-04-2017 
+ */
 
 @Service
 public class ClinicService {
